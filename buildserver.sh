@@ -12,7 +12,7 @@ TMP_DISC_DIR="`mktemp -d`"
 TMP_INITRD_DIR="`mktemp -d`"
 
 # download and extract server iso
-SOURCE_ISO_URL="http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot/mini.iso"
+SOURCE_ISO_URL="http://archive.ubuntu.com/ubuntu/dists/eoan/main/installer-amd64/current/images/netboot/mini.iso"
 cd "$TMP_DOWNLOAD_DIR"
 wget -4 "$SOURCE_ISO_URL" -O "./server.iso"
 7z x "./server.iso" "-o$TMP_DISC_DIR"
